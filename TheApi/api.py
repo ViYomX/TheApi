@@ -678,7 +678,6 @@ class Client:
         response = response.json()
         return response["text"]
 
-
     async def get_truth(self, rating: str = None) -> dict:
         """
         Fetches a truth question from the `API <https://docs.truthordarebot.xyz/api-docs>`_ .
@@ -690,13 +689,15 @@ class Client:
             ``dict``: The JSON response containing the truth question.
         """
         params = {"rating": rating} if rating else {}
-        response = await self.request.get("https://api.truthordarebot.xyz/v1/truth", params=params)
+        response = await self.request.get(
+            "https://api.truthordarebot.xyz/v1/truth", params=params
+        )
         return response.json()
 
     async def get_dare(self, rating: str = None) -> dict:
         """
         Fetches a dare question from the `API <https://docs.truthordarebot.xyz/api-docs>`_ .
- 
+
         Args:
             rating (``str``, *optional*): The rating of the question. Must be "pg", "pg13", or "r".
 
@@ -704,7 +705,9 @@ class Client:
             ``dict``: The JSON response containing the dare question.
         """
         params = {"rating": rating} if rating else {}
-        response = await self.request.get("https://api.truthordarebot.xyz/v1/dare", params=params)
+        response = await self.request.get(
+            "https://api.truthordarebot.xyz/v1/dare", params=params
+        )
         return response.json()
 
     async def get_wyr(self, rating: str = None) -> dict:
@@ -718,7 +721,9 @@ class Client:
             ``dict``: The JSON response containing the Would You Rather question.
         """
         params = {"rating": rating} if rating else {}
-        response = await self.request.get("https://api.truthordarebot.xyz/v1/wyr", params=params)
+        response = await self.request.get(
+            "https://api.truthordarebot.xyz/v1/wyr", params=params
+        )
         return response.json()
 
     async def get_nhie(self, rating: str = None) -> dict:
@@ -732,7 +737,9 @@ class Client:
             ``dict``: The JSON response containing the Never Have I Ever question.
         """
         params = {"rating": rating} if rating else {}
-        response = await self.request.get("https://api.truthordarebot.xyz/v1/nhie", params=params)
+        response = await self.request.get(
+            "https://api.truthordarebot.xyz/v1/nhie", params=params
+        )
         return response.json()
 
     async def get_paranoia(self, rating: str = None) -> dict:
@@ -746,7 +753,9 @@ class Client:
             ``dict``: The JSON response containing the Paranoia question.
         """
         params = {"rating": rating} if rating else {}
-        response = await self.request.get("https://api.truthordarebot.xyz/v1/paranoia", params=params)
+        response = await self.request.get(
+            "https://api.truthordarebot.xyz/v1/paranoia", params=params
+        )
         return response.json()
 
     async def google_search(
@@ -860,7 +869,7 @@ class Client:
         """
         response = await self.request.get("https://randomuser.me/api/")
         return response.json()
-       
+
     async def hindi_quote(self) -> str:
         """
         Fetches a random Hindi quote.
