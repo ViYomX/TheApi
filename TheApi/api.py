@@ -862,7 +862,7 @@ class Client:
 
     async def random_user(self) -> dict:
         """
-        Fetch a random user from the `API <https://randomuser.me/api/>`_ .
+        Fetch a random user details from the `Random API <https://randomuser.me/>`_ .
 
         Returns:
             ``dict``: Parsed JSON response with user details.
