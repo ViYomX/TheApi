@@ -314,22 +314,58 @@
 <dd><p>Fetch emojis from the <a class="reference external" href="https://github.com/cheatsnake/emojihub#-api-documentation">EmojiHub API</a> based on the specified endpoint, category, and group.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>endpoint</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – <p>The base API endpoint. Defaults to “random”.
-Options are:</p>
-<blockquote>
-<div><ul>
+<dd class="field-odd"><p><strong>endpoint</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – <dl class="simple">
+<dt>The base API endpoint. Defaults to “random”.</dt><dd><dl class="simple">
+<dt>Options are:</dt><dd><ul class="simple">
 <li><p><strong>”random”</strong>: Fetch a random emoji.</p></li>
 <li><p><strong>”all”</strong>: Fetch all emojis.</p></li>
 </ul>
-</div></blockquote>
-</p></li>
-<li><p><strong>category</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The category of emojis to filter by. Available categories:                - “smileys-and-people”                - “animals-and-nature”                - “food-and-drink”                - “travel-and-places”                - “activities”                - “objects”                - “symbols”                - “flags”            group (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>): The group within a category to filter by. Available groups:                - <strong>Smileys and People</strong>: “body”, “cat-face”, “clothing”, “creature-face”, “emotion”, “face-negative”,
-“face-neutral”, “face-positive”, “face-role”, “face-sick”, “family”, “monkey-face”, “person”,
-“person-activity”, “person-gesture”, “person-role”, “skin-tone”                - <strong>Animals and Nature</strong>: “animal-amphibian”, “animal-bird”, “animal-bug”, “animal-mammal”,
-“animal-marine”, “animal-reptile”, “plant-flower”, “plant-other”                - <strong>Food and Drink</strong>: “dishware”, “drink”, “food-asian”, “food-fruit”, “food-prepared”,
-“food-sweet”, “food-vegetable”                - <strong>Travel and Places</strong>: “travel-and-places”                - <strong>Activities</strong>: “activities”                - <strong>Objects</strong>: “objects”                - <strong>Symbols</strong>: “symbols”                - <strong>Flags</strong>: “flags”</p></li>
+</dd>
+</dl>
+</dd>
+<dt>category (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>): The category of emojis to filter by.</dt><dd><dl class="simple">
+<dt>Available categories:</dt><dd><ul class="simple">
+<li><p>”smileys-and-people”</p></li>
+<li><p>”animals-and-nature”</p></li>
+<li><p>”food-and-drink”</p></li>
+<li><p>”travel-and-places”</p></li>
+<li><p>”activities”</p></li>
+<li><p>”objects”</p></li>
+<li><p>”symbols”</p></li>
+<li><p>”flags”</p></li>
 </ul>
+</dd>
+</dl>
+</dd>
+<dt>group (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>): The group within a category to filter by.</dt><dd><dl class="simple">
+<dt>Available groups:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt><strong>Smileys and People</strong>: “body”, “cat-face”, “clothing”, “creature-face”, “emotion”, “face-negative”,</dt><dd><p>”face-neutral”, “face-positive”, “face-role”, “face-sick”, “family”, “monkey-face”, “person”,
+“person-activity”, “person-gesture”, “person-role”, “skin-tone”</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Animals and Nature</strong>: “animal-amphibian”, “animal-bird”, “animal-bug”, “animal-mammal”,</dt><dd><p>”animal-marine”, “animal-reptile”, “plant-flower”, “plant-other”</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Food and Drink</strong>: “dishware”, “drink”, “food-asian”, “food-fruit”, “food-prepared”,</dt><dd><p>”food-sweet”, “food-vegetable”</p>
+</dd>
+</dl>
+</li>
+<li><p><strong>Travel and Places</strong>: “travel-and-places”</p></li>
+<li><p><strong>Activities</strong>: “activities”</p></li>
+<li><p><strong>Objects</strong>: “objects”</p></li>
+<li><p><strong>Symbols</strong>: “symbols”</p></li>
+<li><p><strong>Flags</strong>: “flags”</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Union[Dict,</span> <span class="pre">List]</span></code> – Parsed JSON response containing the requested emoji data.</p>
