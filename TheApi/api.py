@@ -263,41 +263,41 @@ class Client:
 
         Args:
            endpoint (``str``, *optional*): The base API endpoint. Defaults to "random".
-              Options are:
-                 - **"random"**: Fetch a random emoji.
-                 - **"all"**: Fetch all emojis.
+             Options are:
+               - **"random"**: Fetch a random emoji.
+               - **"all"**: Fetch all emojis.
 
-            category (``str``, *optional*): The category of emojis to filter by.
-               Available categories:
-                  - "smileys-and-people"
-                  - "animals-and-nature"
-                  - "food-and-drink"
-                  - "travel-and-places"
-                  - "activities"
-                  - "objects"
-                  - "symbols"
-                  - "flags"
+           category (``str``, *optional*): The category of emojis to filter by.
+             Available categories:
+               - "smileys-and-people"
+               - "animals-and-nature"
+               - "food-and-drink"
+               - "travel-and-places"
+               - "activities"
+               - "objects"
+               - "symbols"
+               - "flags"
             group (``str``, *optional*): The group within a category to filter by.
-               Available groups:
-                  - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
-                     "face-neutral", "face-positive", "face-role", "face-sick", "family", "monkey-face", "person",
-                     "person-activity", "person-gesture", "person-role", "skin-tone"
+              Available groups:
+                - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
+                   "face-neutral", "face-positive", "face-role", "face-sick", "family", "monkey-face", "person",
+                   "person-activity", "person-gesture", "person-role", "skin-tone"
+                   
+                - **Animals and Nature**: "animal-amphibian", "animal-bird", "animal-bug", "animal-mammal",
+                  "animal-marine", "animal-reptile", "plant-flower", "plant-other"
 
-                  - **Animals and Nature**: "animal-amphibian", "animal-bird", "animal-bug", "animal-mammal",
-                     "animal-marine", "animal-reptile", "plant-flower", "plant-other"
+                - **Food and Drink**: "dishware", "drink", "food-asian", "food-fruit", "food-prepared",
+                  "food-sweet", "food-vegetable"
 
-                  - **Food and Drink**: "dishware", "drink", "food-asian", "food-fruit", "food-prepared",
-                     "food-sweet", "food-vegetable"
+                - **Travel and Places**: "travel-and-places"
 
-                  - **Travel and Places**: "travel-and-places"
+                - **Activities**: "activities"
 
-                  - **Activities**: "activities"
+                - **Objects**: "objects"
 
-                  - **Objects**: "objects"
+                - **Symbols**: "symbols"
 
-                  - **Symbols**: "symbols"
-
-                  - **Flags**: "flags"
+                - **Flags**: "flags"
 
 
         Returns:
