@@ -277,28 +277,21 @@ class Client:
                - "objects"
                - "symbols"
                - "flags"
+               
             group (``str``, *optional*): The group within a category to filter by.
               Available groups:
                 - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
                    "face-neutral", "face-positive", "face-role", "face-sick", "family", "monkey-face", "person",
                    "person-activity", "person-gesture", "person-role", "skin-tone"
-
                 - **Animals and Nature**: "animal-amphibian", "animal-bird", "animal-bug", "animal-mammal",
                   "animal-marine", "animal-reptile", "plant-flower", "plant-other"
-
                 - **Food and Drink**: "dishware", "drink", "food-asian", "food-fruit", "food-prepared",
                   "food-sweet", "food-vegetable"
-
                 - **Travel and Places**: "travel-and-places"
-
                 - **Activities**: "activities"
-
                 - **Objects**: "objects"
-
                 - **Symbols**: "symbols"
-
                 - **Flags**: "flags"
-
 
         Returns:
             ``Union[Dict, List]``: Parsed JSON response containing the requested emoji data.
