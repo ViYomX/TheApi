@@ -36,7 +36,7 @@ extensions = [
 
 templates_path = ["_templates"]
 exclude_patterns = []
-pygments_style = 'friendly'
+pygments_style = "friendly"
 html_title = "TheApix"
 html_theme = "sphinx_rtd_theme"
 html_copy_source = False
@@ -45,7 +45,7 @@ html_extra_path = ["_templates"]
 html_favicon = html_static_path[0] + "/img/TheApix.ico"
 
 html_theme_options = {
-    'display_version': True,
+    "display_version": True,
 }
 
 napoleon_include_special_with_doc = False
