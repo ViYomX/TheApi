@@ -1266,9 +1266,9 @@ class Client:
 
                print(result)
 
-           .. code json
+            .. code:: JSON
 
-              {
+               {
                   'postLink': 'https://redd.it/1i1fqhq',
                   'subreddit': 'dankmemes',
                   'title': 'Our beloved half reptile, half cyborg',
@@ -1283,7 +1283,7 @@ class Client:
                     'https://preview.redd.it/pjg18sljr0de1.png?width=320&crop=smart&auto=webp&s=87f0748cbaa3082160c13c453352c805010cd7d6',
                   ]
 
-              }
+               }
 
         """
         response = await self.request.get("https://meme-api.com/gimme")
