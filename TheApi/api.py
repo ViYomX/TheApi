@@ -264,8 +264,8 @@ class Client:
         Args:
             endpoint (``str``, *optional*): The base API endpoint. Defaults to "random".  
               Options are:
-              - **"random"**: Fetch a random emoji.
-              - **"all"**: Fetch all emojis.
+                - **"random"**: Fetch a random emoji.
+                - **"all"**: Fetch all emojis.
 
             category (``str``, *optional*): The category of emojis to filter by. Available categories:\
                 - "smileys-and-people"\
