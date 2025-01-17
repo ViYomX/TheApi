@@ -311,60 +311,36 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="TheApi.Client.emoji">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">emoji</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">List</span></span></span><a class="headerlink" href="#TheApi.Client.emoji" title="Link to this definition">¶</a></dt>
-<dd><p>Fetch emojis from the <a href="#id1"><span class="problematic" id="id2">`EmojiHub API&lt;https://github.com/cheatsnake/emojihub#-api-documentation&gt;`_</span></a> based on the specified endpoint, category, and group.</p>
+<dd><p>Fetch emojis from the <a class="reference external" href="https://github.com/cheatsnake/emojihub#-api-documentation">EmojiHub API</a> based on the specified endpoint, category, and group.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>endpoint</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The base API endpoint. Defaults to “random”. Options are:
-- “random”: Fetch a random emoji.
-- “all”: Fetch all emojis.</p></li>
-<li><p><strong>category</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The category of emojis to filter by. Available categories:
-- “smileys-and-people”
-- “animals-and-nature”
-- “food-and-drink”
-- “travel-and-places”
-- “activities”
-- “objects”
-- “symbols”
-- “flags”</p></li>
-<li><p><strong>group</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – <p>The group within a category to filter by. Available groups:
-- <strong>Smileys and People</strong>: “body”, “cat-face”, “clothing”, “creature-face”, “emotion”, “face-negative”,</p>
-<blockquote>
-<div><p>”face-neutral”, “face-positive”, “face-role”, “face-sick”, “family”, “monkey-face”, “person”,
-“person-activity”, “person-gesture”, “person-role”, “skin-tone”</p>
-</div></blockquote>
-<ul>
-<li><p><strong>Animals and Nature</strong>: “animal-amphibian”, “animal-bird”, “animal-bug”, “animal-mammal”,
-“animal-marine”, “animal-reptile”, “plant-flower”, “plant-other”</p></li>
-<li><p><strong>Food and Drink</strong>: “dishware”, “drink”, “food-asian”, “food-fruit”, “food-prepared”,
-“food-sweet”, “food-vegetable”</p></li>
-<li><p><strong>Travel and Places</strong>: “travel-and-places”</p></li>
-<li><p><strong>Activities</strong>: “activities”</p></li>
-<li><p><strong>Objects</strong>: “objects”</p></li>
-<li><p><strong>Symbols</strong>: “symbols”</p></li>
-<li><p><strong>Flags</strong>: “flags”</p></li>
-</ul>
-</p></li>
+<li><p><strong>endpoint</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The base API endpoint. Defaults to “random”. Options are:                - <strong>“random”</strong>: Fetch a random emoji.                - <strong>“all”</strong>: Fetch all emojis.</p></li>
+<li><p><strong>category</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The category of emojis to filter by. Available categories:                - “smileys-and-people”                - “animals-and-nature”                - “food-and-drink”                - “travel-and-places”                - “activities”                - “objects”                - “symbols”                - “flags”            group (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>): The group within a category to filter by. Available groups:                - <strong>Smileys and People</strong>: “body”, “cat-face”, “clothing”, “creature-face”, “emotion”, “face-negative”,
+“face-neutral”, “face-positive”, “face-role”, “face-sick”, “family”, “monkey-face”, “person”,
+“person-activity”, “person-gesture”, “person-role”, “skin-tone”                - <strong>Animals and Nature</strong>: “animal-amphibian”, “animal-bird”, “animal-bug”, “animal-mammal”,
+“animal-marine”, “animal-reptile”, “plant-flower”, “plant-other”                - <strong>Food and Drink</strong>: “dishware”, “drink”, “food-asian”, “food-fruit”, “food-prepared”,
+“food-sweet”, “food-vegetable”                - <strong>Travel and Places</strong>: “travel-and-places”                - <strong>Activities</strong>: “activities”                - <strong>Objects</strong>: “objects”                - <strong>Symbols</strong>: “symbols”                - <strong>Flags</strong>: “flags”</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>Union[Dict, List]</em> – Parsed JSON response containing the requested emoji data.</p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Union[Dict,</span> <span class="pre">List]</span></code> – Parsed JSON response containing the requested emoji data.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random_emoji</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random_emoji</span> <span class="o">=</span> <span class="k">await</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random Emoji:&quot;</span><span class="p">,</span> <span class="n">random_emoji</span><span class="p">)</span>
 
 <span class="c1"># Fetch all emojis in the &quot;food-and-drink&quot; category</span>
-<span class="n">food_emojis</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s2">&quot;food-and-drink&quot;</span><span class="p">)</span>
+<span class="n">food_emojis</span> <span class="o">=</span> <span class="k">await</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s2">&quot;food-and-drink&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Food Emojis:&quot;</span><span class="p">,</span> <span class="n">food_emojis</span><span class="p">)</span>
 
 <span class="c1"># Fetch a random emoji from the &quot;face-positive&quot; group</span>
-<span class="n">face_positive_emoji</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="s2">&quot;face-positive&quot;</span><span class="p">)</span>
+<span class="n">face_positive_emoji</span> <span class="o">=</span> <span class="k">await</span> <span class="n">api</span><span class="o">.</span><span class="n">emoji</span><span class="p">(</span><span class="n">group</span><span class="o">=</span><span class="s2">&quot;face-positive&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Face Positive Emoji:&quot;</span><span class="p">,</span> <span class="n">face_positive_emoji</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For more information, <a class="reference external" href="https://github.com/cheatsnake/emojihub">visit</a>:</p>
+<p>For more information, <a class="reference external" href="https://github.com/cheatsnake/emojihub">visit EmojiHub</a>:</p>
 </dd></dl>
 
 </section>
