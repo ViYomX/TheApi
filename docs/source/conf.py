@@ -39,18 +39,15 @@ exclude_patterns = []
 pygments_style = "friendly"
 html_title = "TheApix"
 html_theme = "sphinx_rtd_theme"
-html_copy_source = False
 html_static_path = ["_static"]
 html_extra_path = ["_templates"]
 html_favicon = html_static_path[0] + "/img/TheApix.ico"
 
 html_theme_options = {
-    "display_version": True,
+    'collapse_navigation': True,
+    'display_version': True,
+    'navigation_depth': 3,
 }
-
-napoleon_include_special_with_doc = False
-napoleon_use_rtype = False
-napoleon_use_param = True
 
 docs = os.getcwd()
 
