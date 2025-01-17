@@ -282,7 +282,7 @@ class Client:
                 - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
                    "face-neutral", "face-positive", "face-role", "face-sick", "family", "monkey-face", "person",
                    "person-activity", "person-gesture", "person-role", "skin-tone"
-                   
+
                 - **Animals and Nature**: "animal-amphibian", "animal-bird", "animal-bug", "animal-mammal",
                   "animal-marine", "animal-reptile", "plant-flower", "plant-other"
 
