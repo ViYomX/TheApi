@@ -1282,9 +1282,9 @@ class Client:
                     'https://preview.redd.it/pjg18sljr0de1.png?width=216&crop=smart&auto=webp&s=28ba33960f084eeeb8218c1aab36a51cd80cbc0d',
                     'https://preview.redd.it/pjg18sljr0de1.png?width=320&crop=smart&auto=webp&s=87f0748cbaa3082160c13c453352c805010cd7d6',
                   ]
-                  
+
               }
-            
+
         """
         response = await self.request.get("https://meme-api.com/gimme")
         return response.json()
