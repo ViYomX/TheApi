@@ -254,9 +254,9 @@ class Client:
             return {"success": False, "error": str(e)}
 
     async def emoji(
-        endpoint: str = "random", 
-        category: Optional[str] = None, 
-        group: Optional[str] = None
+        endpoint: str = "random",
+        category: Optional[str] = None,
+        group: Optional[str] = None,
     ) -> Union[Dict, List]:
         """
         Fetch emojis from the `EmojiHub API<https://github.com/cheatsnake/emojihub#-api-documentation>`_ based on the specified endpoint, category, and group.
@@ -265,7 +265,7 @@ class Client:
             endpoint (``str``, *optional*): The base API endpoint. Defaults to "random". Options are:
                 - "random": Fetch a random emoji.
                 - "all": Fetch all emojis.
-                
+
             category (``str``, *optional*): The category of emojis to filter by. Available categories:
                 - "smileys-and-people"
                 - "animals-and-nature"
@@ -294,7 +294,7 @@ class Client:
 
         Examples:
             .. code:: python
-            
+
                random_emoji = api.emoji()
                print("Random Emoji:", random_emoji)
 
@@ -305,7 +305,7 @@ class Client:
                # Fetch a random emoji from the "face-positive" group
                face_positive_emoji = api.emoji(group="face-positive")
                print("Face Positive Emoji:", face_positive_emoji)
-               
+
         For more information, `visit <https://github.com/cheatsnake/emojihub>`_:
         """
         api_url = "https://emojihub.yurace.pro/api"
@@ -321,7 +321,7 @@ class Client:
 
         response = await self.requests.get(url)
         return response.json()
-    
+
     async def fakerapi(
         self,
         endpoint: str,
