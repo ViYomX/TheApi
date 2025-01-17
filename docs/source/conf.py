@@ -44,9 +44,9 @@ html_extra_path = ["_templates"]
 html_favicon = html_static_path[0] + "/img/TheApix.ico"
 
 html_theme_options = {
-    'collapse_navigation': True,
-    'display_version': True,
-    'navigation_depth': 3,
+    "collapse_navigation": True,
+    "display_version": True,
+    "navigation_depth": 3,
 }
 
 docs = os.getcwd()
