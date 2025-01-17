@@ -266,7 +266,6 @@ class Client:
              Options are:
                - **"random"**: Fetch a random emoji.
                - **"all"**: Fetch all emojis.
-
            category (``str``, *optional*): The category of emojis to filter by.
              Available categories:
                - "smileys-and-people"
@@ -277,7 +276,6 @@ class Client:
                - "objects"
                - "symbols"
                - "flags"
-
             group (``str``, *optional*): The group within a category to filter by.
               Available groups:
                 - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
