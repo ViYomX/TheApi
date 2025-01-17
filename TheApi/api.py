@@ -1009,7 +1009,7 @@ class Client:
         Args:
             query (``str``): The search term to look up on Wikipedia.
 
-        Returns: 
+        Returns:
             ``dict``: A dictionary containing information about the top search result, with keys:
                 **"title"** (**str**): The title of the Wikipedia article.
                 **"summary"** (**str**): A brief summary of the article's content.
@@ -1264,7 +1264,7 @@ class Client:
 
                result = await api.meme()
                print(result)
-    
+
             Example JSON:
             .. code-block:: json
 
