@@ -277,7 +277,7 @@ class Client:
                - "objects"
                - "symbols"
                - "flags"
-               
+
             group (``str``, *optional*): The group within a category to filter by.
               Available groups:
                 - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
