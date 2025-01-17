@@ -1265,7 +1265,6 @@ class Client:
                result = await api.meme()
                print(result)
 
-            Example JSON:
             .. code-block:: json
 
                {
