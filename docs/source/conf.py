@@ -86,7 +86,7 @@ html_theme_options = {
     ],
 }
 
-pygments_style = "sphnix"
+pygments_style = "default"
 # pygments_dark_style = "native"
 
 napoleon_include_special_with_doc = False
