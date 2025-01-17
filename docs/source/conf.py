@@ -37,13 +37,11 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = []
 
-html_title = f"TheApix v{version}"
-# html_theme = "sphinx_rtd_theme"
-html_theme = "furo"
+html_title = "TheApix"
+html_theme = "sphinx_rtd_theme"
 html_copy_source = False
 html_static_path = ["_static"]
 html_extra_path = ["_templates"]
-html_css_files = ["css/pyrogram.css"]
 html_favicon = html_static_path[0] + "/img/TheApix.ico"
 
 html_theme_options = {
@@ -88,7 +86,7 @@ html_theme_options = {
     ],
 }
 
-pygments_style = "default"
+pygments_style = "sphnix"
 # pygments_dark_style = "native"
 
 napoleon_include_special_with_doc = False
