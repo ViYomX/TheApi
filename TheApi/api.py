@@ -259,54 +259,54 @@ class Client:
         group: Optional[str] = None,
     ) -> Union[Dict, List]:
         """
-        Fetch emojis from the `EmojiHub API<https://github.com/cheatsnake/emojihub#-api-documentation>`_ based on the specified endpoint, category, and group.
+        Fetch emojis from the `EmojiHub API <https://github.com/cheatsnake/emojihub#-api-documentation>`_ based on the specified endpoint, category, and group.
 
         Args:
-            endpoint (``str``, *optional*): The base API endpoint. Defaults to "random". Options are:
-                - "random": Fetch a random emoji.
-                - "all": Fetch all emojis.
+            endpoint (``str``, *optional*): The base API endpoint. Defaults to "random". Options are:\
+                - **"random"**: Fetch a random emoji.\
+                - **"all"**: Fetch all emojis.\
 
-            category (``str``, *optional*): The category of emojis to filter by. Available categories:
-                - "smileys-and-people"
-                - "animals-and-nature"
-                - "food-and-drink"
-                - "travel-and-places"
-                - "activities"
-                - "objects"
-                - "symbols"
-                - "flags"
-            group (``str``, *optional*): The group within a category to filter by. Available groups:
+            category (``str``, *optional*): The category of emojis to filter by. Available categories:\
+                - "smileys-and-people"\
+                - "animals-and-nature"\
+                - "food-and-drink"\
+                - "travel-and-places"\
+                - "activities"\
+                - "objects"\
+                - "symbols"\
+                - "flags"\
+            group (``str``, *optional*): The group within a category to filter by. Available groups:\
                 - **Smileys and People**: "body", "cat-face", "clothing", "creature-face", "emotion", "face-negative",
                   "face-neutral", "face-positive", "face-role", "face-sick", "family", "monkey-face", "person",
-                  "person-activity", "person-gesture", "person-role", "skin-tone"
+                  "person-activity", "person-gesture", "person-role", "skin-tone"\
                 - **Animals and Nature**: "animal-amphibian", "animal-bird", "animal-bug", "animal-mammal",
-                  "animal-marine", "animal-reptile", "plant-flower", "plant-other"
+                  "animal-marine", "animal-reptile", "plant-flower", "plant-other"\
                 - **Food and Drink**: "dishware", "drink", "food-asian", "food-fruit", "food-prepared",
-                  "food-sweet", "food-vegetable"
-                - **Travel and Places**: "travel-and-places"
-                - **Activities**: "activities"
-                - **Objects**: "objects"
-                - **Symbols**: "symbols"
-                - **Flags**: "flags"
+                  "food-sweet", "food-vegetable"\
+                - **Travel and Places**: "travel-and-places"\
+                - **Activities**: "activities"\
+                - **Objects**: "objects"\
+                - **Symbols**: "symbols"\
+                - **Flags**: "flags"\
 
         Returns:
-            Union[Dict, List]: Parsed JSON response containing the requested emoji data.
+            ``Union[Dict, List]``: Parsed JSON response containing the requested emoji data.
 
         Examples:
             .. code:: python
 
-               random_emoji = api.emoji()
+               random_emoji = await api.emoji()
                print("Random Emoji:", random_emoji)
 
                # Fetch all emojis in the "food-and-drink" category
-               food_emojis = api.emoji(endpoint="all", category="food-and-drink")
+               food_emojis = await api.emoji(endpoint="all", category="food-and-drink")
                print("Food Emojis:", food_emojis)
 
                # Fetch a random emoji from the "face-positive" group
-               face_positive_emoji = api.emoji(group="face-positive")
+               face_positive_emoji = await api.emoji(group="face-positive")
                print("Face Positive Emoji:", face_positive_emoji)
 
-        For more information, `visit <https://github.com/cheatsnake/emojihub>`_:
+        For more information, `visit EmojiHub <https://github.com/cheatsnake/emojihub>`_:
         """
         api_url = "https://emojihub.yurace.pro/api"
 
