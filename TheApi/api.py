@@ -41,7 +41,6 @@ class Client:
             "hindi_quote": "https://hindi-quotes.vercel.app/random",
             "image": "https://graph.org/file/1f8d00177ac2429b101b9.jpg",
             "jokes": "https://v2.jokeapi.dev/joke/Any",
-            "meme": "https://meme-api.com/gimme",
             "neko_url": "https://nekos.best/api/v2/{endpoint}?amount={amount}",
             "neko_hug": "https://nekos.best/api/v2/hug?amount={}",
             "pdf": "https://api.stakdek.de/api",
@@ -1253,16 +1252,42 @@ class Client:
         else:
             return None
 
-    async def meme(self):
+    async def meme(self) -> dict:
         """
         Fetches a random meme image URL.
 
         Returns:
-            ``str`` or ``None``: The URL of the meme image if available, otherwise None.
+            ``dict``: A dict containing the results.
+
+        Example:
+            .. code:: python
+
+               result = await api.meme()
+
+               print(result)
+
+           .. code json
+
+              {
+                  'postLink': 'https://redd.it/1i1fqhq',
+                  'subreddit': 'dankmemes',
+                  'title': 'Our beloved half reptile, half cyborg',
+                  'url': 'https://i.redd.it/pjg18sljr0de1.png',
+                  'nsfw': false,
+                  'spoiler': false,
+                  'author': 'Techno-Xenos',
+                  'ups': 189,
+                  'preview': [
+                    'https://preview.redd.it/pjg18sljr0de1.png?width=108&crop=smart&auto=webp&s=eb4141c3ac83bb2e9847fc598a5f676a9bf5425b',
+                    'https://preview.redd.it/pjg18sljr0de1.png?width=216&crop=smart&auto=webp&s=28ba33960f084eeeb8218c1aab36a51cd80cbc0d',
+                    'https://preview.redd.it/pjg18sljr0de1.png?width=320&crop=smart&auto=webp&s=87f0748cbaa3082160c13c453352c805010cd7d6',
+                  ]
+                  
+              }
+            
         """
-        response = await self.request.get(self.base_urls["meme"])
-        response = response.json()
-        return response["preview"][-1] if response else None
+        response = await self.request.get("https://meme-api.com/gimme")
+        return response.json()
 
     async def fox(self):
         """
