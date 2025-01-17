@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="../_static/TheApix.ico"/>
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=a12e3537"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -92,10 +92,7 @@
 <li class="toctree-l3"><a class="reference internal" href="riddle.html">riddle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stackoverflow_search.html">stackoverflow_search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload_image.html">upload_image</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">wikipedia</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#TheApi.Client.wikipedia"><code class="docutils literal notranslate"><span class="pre">Client.wikipedia()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">wikipedia</a></li>
 <li class="toctree-l3"><a class="reference internal" href="write.html">write</a></li>
 </ul>
 </li>
@@ -122,6 +119,7 @@
           <li class="breadcrumb-item"><a href="index.html">Methods</a></li>
       <li class="breadcrumb-item active">wikipedia</li>
       <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/wikipedia.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -140,8 +138,7 @@
 <dd class="field-odd"><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The search term to look up on Wikipedia.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> –</p>
-<dl class="simple">
+<dd class="field-even"><p><dl class="simple">
 <dt>A dictionary containing information about the top search result, with keys:</dt><dd><p><strong>”title”</strong> (<strong>str</strong>): The title of the Wikipedia article.
 <strong>“summary”</strong> (<strong>str</strong>): A brief summary of the article’s content.
 <strong>“url”</strong> (<strong>str</strong>): The URL link to the full Wikipedia article.
@@ -150,6 +147,9 @@
 </dl>
 <p>If no results are found, returns a dictionary with an <strong>“error”</strong> key.</p>
 </p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">dict</span></code></p>
 </dd>
 </dl>
 </dd></dl>

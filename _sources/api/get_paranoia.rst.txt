@@ -1,0 +1,6 @@
+get_paranoia
+============
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.get_paranoia

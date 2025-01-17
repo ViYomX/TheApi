@@ -1,0 +1,6 @@
+get_dare
+========
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.get_dare

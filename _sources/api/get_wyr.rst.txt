@@ -1,0 +1,6 @@
+get_wyr
+=======
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.get_wyr

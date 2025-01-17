@@ -1,0 +1,6 @@
+get_truth
+=========
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.get_truth

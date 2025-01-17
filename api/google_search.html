@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="../_static/TheApix.ico"/>
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=a12e3537"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -81,10 +81,7 @@
 <li class="toctree-l3"><a class="reference internal" href="get_words.html">get_words</a></li>
 <li class="toctree-l3"><a class="reference internal" href="get_wyr.html">get_wyr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="github_search.html">github_search</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">google_search</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#TheApi.Client.google_search"><code class="docutils literal notranslate"><span class="pre">Client.google_search()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">google_search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hindi_quote.html">hindi_quote</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hug.html">hug</a></li>
 <li class="toctree-l3"><a class="reference internal" href="meme.html">meme</a></li>
@@ -122,6 +119,7 @@
           <li class="breadcrumb-item"><a href="index.html">Methods</a></li>
       <li class="breadcrumb-item active">google_search</li>
       <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/google_search.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -150,13 +148,15 @@ region (str, optional): The region to filter search results. Defaults to None.</
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><p><em>dict</em> –</p>
-<dl class="simple">
+<dd class="field-odd"><p><dl class="simple">
 <dt>A dictionary containing the success status and either the result or an error message.</dt><dd><p>If successful, the dictionary will contain <strong>“success”: True</strong> and <strong>“result”</strong>: the file path where the generated image is saved.
 If failed, the dictionary will contain <strong>“success”: False</strong> and <strong>“error”</strong>: a string describing the error that occurred.</p>
 </dd>
 </dl>
 </p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>

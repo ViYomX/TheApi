@@ -1,0 +1,6 @@
+emoji
+=====
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.emoji

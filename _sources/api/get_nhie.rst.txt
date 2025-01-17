@@ -1,0 +1,6 @@
+get_nhie
+========
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.get_nhie

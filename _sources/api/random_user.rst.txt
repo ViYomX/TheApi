@@ -1,0 +1,6 @@
+random_user
+===========
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.random_user
