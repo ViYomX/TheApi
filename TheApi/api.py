@@ -1009,7 +1009,7 @@ class Client:
         Args:
             query (``str``): The search term to look up on Wikipedia.
 
-        Returns:
+        Returns: 
             ``dict``: A dictionary containing information about the top search result, with keys:
                 **"title"** (**str**): The title of the Wikipedia article.
                 **"summary"** (**str**): A brief summary of the article's content.
@@ -1260,32 +1260,31 @@ class Client:
             ``dict``: A dict containing the results.
 
         Example:
-            .. code:: python
+            .. code-block:: python
 
                result = await api.meme()
-
                print(result)
-
-            .. code:: JSON
+    
+            Example JSON:
+            .. code-block:: json
 
                {
-                  'postLink': 'https://redd.it/1i1fqhq',
-                  'subreddit': 'dankmemes',
-                  'title': 'Our beloved half reptile, half cyborg',
-                  'url': 'https://i.redd.it/pjg18sljr0de1.png',
-                  'nsfw': false,
-                  'spoiler': false,
-                  'author': 'Techno-Xenos',
-                  'ups': 189,
-                  'preview': [
-                    'https://preview.redd.it/pjg18sljr0de1.png?width=108&crop=smart&auto=webp&s=eb4141c3ac83bb2e9847fc598a5f676a9bf5425b',
-                    'https://preview.redd.it/pjg18sljr0de1.png?width=216&crop=smart&auto=webp&s=28ba33960f084eeeb8218c1aab36a51cd80cbc0d',
-                    'https://preview.redd.it/pjg18sljr0de1.png?width=320&crop=smart&auto=webp&s=87f0748cbaa3082160c13c453352c805010cd7d6',
+                  "postLink": "https://redd.it/1i1fqhq",
+                  "subreddit": "dankmemes",
+                  "title": "Our beloved half reptile, half cyborg",
+                  "url": "https://i.redd.it/pjg18sljr0de1.png",
+                  "nsfw": false,
+                  "spoiler": false,
+                  "author": "Techno-Xenos",
+                  "ups": 189,
+                  "preview": [
+                    "https://preview.redd.it/pjg18sljr0de1.png?width=108&crop=smart&auto=webp&s=eb4141c3ac83bb2e9847fc598a5f676a9bf5425b",
+                    "https://preview.redd.it/pjg18sljr0de1.png?width=216&crop=smart&auto=webp&s=28ba33960f084eeeb8218c1aab36a51cd80cbc0d",
+                    "https://preview.redd.it/pjg18sljr0de1.png?width=320&crop=smart&auto=webp&s=87f0748cbaa3082160c13c453352c805010cd7d6"
                   ]
-
                }
-
         """
+
         response = await self.request.get("https://meme-api.com/gimme")
         return response.json()
 
