@@ -262,9 +262,10 @@ class Client:
         Fetch emojis from the `EmojiHub API <https://github.com/cheatsnake/emojihub#-api-documentation>`_ based on the specified endpoint, category, and group.
 
         Args:
-            endpoint (``str``, *optional*): The base API endpoint. Defaults to "random". Options are:\
-                - **"random"**: Fetch a random emoji.\
-                - **"all"**: Fetch all emojis.\
+            endpoint (``str``, *optional*): The base API endpoint. Defaults to "random".  
+              Options are:
+              - **"random"**: Fetch a random emoji.
+              - **"all"**: Fetch all emojis.
 
             category (``str``, *optional*): The category of emojis to filter by. Available categories:\
                 - "smileys-and-people"\
