@@ -40,6 +40,7 @@ The following methods are available in :obj:`~TheApi.Client`:
    Client.get_wyr
    Client.github_search
    Client.google_search
+   Client.hashtag
    Client.hindi_quote
    Client.hug
    Client.meme
@@ -89,6 +90,7 @@ The following methods are available in :obj:`~TheApi.Client`:
    get_wyr
    github_search
    google_search
+   hashtag
    hindi_quote
    hug
    meme

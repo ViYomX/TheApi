@@ -1,0 +1,6 @@
+hashtag
+=======
+
+.. currentmodule:: TheApi
+
+.. automethod:: Client.hashtag
