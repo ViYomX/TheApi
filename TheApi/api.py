@@ -919,11 +919,10 @@ class Client:
 
         return {"success": True, "result": all_results}
 
-
-    async def hashtag(self, query : str, country : str = None) -> list:
+    async def hashtag(self, query: str, country: str = None) -> list:
         """
-        Fetches hashtags based on the given query. If a country code is provided, 
-        it fetches hashtags related to the query for that specific country. Otherwise, 
+        Fetches hashtags based on the given query. If a country code is provided,
+        it fetches hashtags related to the query for that specific country. Otherwise,
         it fetches the best hashtags for the query.
 
         Args:
@@ -935,17 +934,19 @@ class Client:
 
         Examples:
             .. code-block:: python
-            
+
                >>> get_hashtags('python')
                ['#python', '#coding', '#programming', '#developer']
-        
+
                >>> get_hashtags('python', 'IN')
                ['#pythonindia', '#codingindia', '#programmingindia', '#developerindia']
         """
         if country:
-            page = await self.requests.get(f"https://www.tagsfinder.com/en-{country}/related/{query}/")
+            page = await self.requests.get(
+                f"https://www.tagsfinder.com/en-{country}/related/{query}/"
+            )
             soup = BeautifulSoup(page.content, "html.parser")
-            hashtags = soup.find(id='hashtagy').get_text()
+            hashtags = soup.find(id="hashtagy").get_text()
             if hashtags:
                 hashtags = hashtags.strip().split(" ")
         else:
@@ -954,9 +955,9 @@ class Client:
             hashtags = soup.find("p1").get_text()
             if hashtags:
                 hashtags = hashtags.strip().split(" ")
-    
+
         return hashtags
-    
+
     async def quote(self) -> str:
         """
         Fetches a random quote.
